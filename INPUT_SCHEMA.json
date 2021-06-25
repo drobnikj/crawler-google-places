@@ -220,6 +220,12 @@
             "description": "If checked, the crawler scrapes \"people also search\" for all places. You can speed up crawling if you disable this.",
             "default": false
         },
+        "includeReviews": {
+            "title": "Include reviews",
+            "type": "boolean",
+            "description": "If checked, the crawler scrapes \"reviews\" for all places. You can speed up crawling if you disable this.",
+            "default": true 
+        },
         "additionalInfo": {
             "title": "Additional Place Info",
             "type": "boolean",

@@ -43,6 +43,7 @@ Apify.main(async () => {
         includeHistogram = false, includeOpeningHours = false, includePeopleAlsoSearch = false,
         maxReviews = 5, maxImages = 1, exportPlaceUrls = false, additionalInfo = false, maxCrawledPlaces,
         maxAutomaticZoomOut, reviewsSort = 'mostRelevant', reviewsTranslation = 'originalAndTranslated',
+        includeReviews = true,
 
         // Fields used by Heyrick only, not present in the schema (too narrow use-case for now)
         cachePlaces = false, useCachedPlaces = false, cacheKey,
@@ -254,6 +255,7 @@ Apify.main(async () => {
         multiplier: startRequests.length || 1, // workaround for the maxCrawledPlaces when using multiple queries/startUrls
         geo, reviewsTranslation,
         personalDataOptions,
+        includeReviews
     };
 
     // Create and run crawler

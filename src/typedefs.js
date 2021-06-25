@@ -19,6 +19,7 @@ const Apify = require('apify'); // eslint-disable-line no-unused-vars
  * @property {object} geo
  * @property {string} reviewsTranslation
  * @property {PersonalDataOptions} personalDataOptions
+ * @property {boolean} includeReviews
  */
 
 /**
